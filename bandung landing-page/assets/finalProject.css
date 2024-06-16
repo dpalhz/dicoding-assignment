@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ }
+
+/* navbar  */
+
+header nav{
+    display: flex;
+    position: sticky;
+    height: 10vh;
+    background-color: rgb(3, 2, 2);
+    justify-content: space-around;
+    padding: 10px 0;
+   
+}
+
+header label.logo{
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+   
+   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(171, 110, 110);
+    border: 1px solid black;
+    font-size: 1.2em;
+}
+
+.checkdash{
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media screen and (max-width=768px){
+    header nav ul{
+        width: 35%;
+    }
+
+    
+}
+
+@media screen and (max-width: 576px) {
+    .checkdash{
+        display: block;
+    }
+    header nav ul{
+        display: block;
+        position: fixed;
+        background-color: bisque;
+        width: 100%;
+        height: 100vh;
+        top: 10vh;
+        transform: translateX(100%);
+        transition: all 1s;
+        padding: 10px;
+        
+    }
+    header nav ul li{
+        margin: 15vh;
+        text-align: center;
+     
+        
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+
+
+ }
+
+main img{
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: center;
+}
